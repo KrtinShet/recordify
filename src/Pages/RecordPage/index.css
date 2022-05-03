@@ -1,0 +1,72 @@
+.bg-dark {
+  background: #18191a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn {
+  height: 50px;
+  width: 50px;
+  background-color: #35383c;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.btn-icon {
+  color: #fff;
+  display: flex;
+}
+
+.record-footer {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: calc(100vw * 0.65);
+}
+
+.play-pause-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: #ef4444;
+  color: white;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.play-pause-btn-container {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.play-pause-btn-container span {
+  margin-right: 1rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.play-pause-btn i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.right-left-btn-container {
+  position: absolute;
+  right: 0;
+}

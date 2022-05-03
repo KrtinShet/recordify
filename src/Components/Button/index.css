@@ -1,0 +1,48 @@
+:root {
+  /* violet */
+  --primary-color: 111, 76, 255;
+
+  /* white */
+  --text-color: 256, 256, 256;
+}
+.btnn {
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 5px 20px;
+  margin: 0.4rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  height: 3rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.btnn-glow:hover {
+  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+}
+.btnn-gradient {
+  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  border: 0;
+  color: rgba(var(--text-color));
+}
+
+.btnn:hover {
+  transition: all 0.3s ease;
+}
+
+.bg-blur {
+  overflow: hidden;
+}
+.bg-blur::before {
+  content: "";
+  background-image: var(--bg-image);
+  background-size: cover;
+  height: min-content;
+  width: min-content;
+  position: absolute;
+  z-index: -1;
+  filter: blur(30px);
+}
